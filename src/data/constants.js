@@ -117,8 +117,8 @@ export const LANDMARKS = [
 ];
 
 export const CONTACT_INFO = {
-    phone: ["+91 9876543210", "+91 9876543211"],
-    email: ["info@godrejarden.com", "sales@godrejarden.com"],
+    phone: ["+91 9990217085"],
+    // email: ["info@godrejarden.com", "sales@godrejarden.com"],
     address: "Sector Sigma-III, Greater Noida, Uttar Pradesh",
     workingHours: {
         weekdays: "10 AM - 7 PM",
@@ -126,11 +126,3 @@ export const CONTACT_INFO = {
     }
 };
 
-export const SOCIAL_LINKS = {
-    facebook: "#",
-    twitter: "#",
-    instagram: "#",
-    linkedin: "#",
-    youtube: "#",
-    whatsapp: "https://wa.me/919876543210"
-};

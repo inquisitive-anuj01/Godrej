@@ -60,8 +60,6 @@ const Disclaimer = () => {
                         <p>
                             For any queries, please contact us at:
                             <br />
-                            Email: {CONTACT_INFO.email[0]}
-                            <br />
                             Phone: {CONTACT_INFO.phone[0]}
                         </p>
                     </div>

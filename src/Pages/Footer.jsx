@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FiPhone, FiMail, FiMapPin, FiClock } from 'react-icons/fi';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-import { PROJECT_INFO, CONTACT_INFO, SOCIAL_LINKS } from '../data/constants';
+import { PROJECT_INFO, CONTACT_INFO } from '../data/constants';
 
 const Footer = () => {
     const quickLinks = [
@@ -18,16 +18,9 @@ const Footer = () => {
     const legalLinks = [
         { label: 'Privacy Policy', href: '/privacy' },
         { label: 'Disclaimer', href: '/disclaimer' },
-        { label: 'Terms & Conditions', href: '#' },
     ];
 
-    const socialLinks = [
-        { icon: <FaFacebookF />, href: SOCIAL_LINKS.facebook },
-        { icon: <FaTwitter />, href: SOCIAL_LINKS.twitter },
-        { icon: <FaInstagram />, href: SOCIAL_LINKS.instagram },
-        { icon: <FaLinkedinIn />, href: SOCIAL_LINKS.linkedin },
-        { icon: <FaYoutube />, href: SOCIAL_LINKS.youtube },
-    ];
+    
 
     return (
         <footer className="bg-gray-900 text-white">
@@ -50,19 +43,6 @@ const Footer = () => {
                             Experience luxury living at its finest.
                         </p>
 
-                        {/* Social Links */}
-                        <div className="flex space-x-3">
-                            {socialLinks.map((social, index) => (
-                                <motion.a
-                                    key={index}
-                                    href={social.href}
-                                    whileHover={{ scale: 1.1, y: -2 }}
-                                    className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#4A7C59] transition-colors"
-                                >
-                                    {social.icon}
-                                </motion.a>
-                            ))}
-                        </div>
                     </div>
 
                     {/* Quick Links */}
@@ -104,15 +84,7 @@ const Footer = () => {
                                     ))}
                                 </div>
                             </li>
-                            <li className="flex items-center space-x-3">
-                                <FiMail className="text-[#4A7C59] flex-shrink-0" />
-                                <a
-                                    href={`mailto:${CONTACT_INFO.email[0]}`}
-                                    className="text-gray-400 hover:text-[#4A7C59] transition-colors"
-                                >
-                                    {CONTACT_INFO.email[0]}
-                                </a>
-                            </li>
+                            
                             <li className="flex items-start space-x-3">
                                 <FiClock className="text-[#4A7C59] mt-1 flex-shrink-0" />
                                 <div className="text-gray-400">

@@ -81,8 +81,6 @@ const Privacy = () => {
                         <p>
                             If you have any questions about this Privacy Policy, please contact us at:
                             <br />
-                            Email: {CONTACT_INFO.email[0]}
-                            <br />
                             Phone: {CONTACT_INFO.phone[0]}
                         </p>
 

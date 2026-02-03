@@ -60,7 +60,7 @@ const Header = ({ scrollToSection, openModal }) => {
 
                         {/* Call Now */}
                         <motion.a
-                            href="tel:+919876543210"
+                            href="tel:+919990217085"
                             whileHover={{ scale: 1.05 }}
                             className="flex items-center bg-gradient-to-r from-[#4A7C59] to-[#3D6B4A] text-white px-5 py-2.5 rounded-full shadow-lg hover:shadow-xl transition-all"
                         >
@@ -81,7 +81,7 @@ const Header = ({ scrollToSection, openModal }) => {
                     {/* Mobile Buttons */}
                     <div className="flex lg:hidden items-center space-x-3">
                         <a
-                            href="tel:+919876543210"
+                            href="tel:+919990217085"
                             className="flex items-center bg-[#4A7C59] text-white p-2.5 rounded-full shadow"
                         >
                             <FiPhone size={18} />
