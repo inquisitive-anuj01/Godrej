@@ -31,7 +31,7 @@ const BookingForm = ({ title = "Get in Touch" }) => {
         try {
             // TODO: Update with actual backend URL
             const response = await fetch(
-                "https://godrej-backend-gray.vercel.app/api/submit-form",
+                "https://godrej-backend-blue.vercel.app/api/submit-form",
                 {
                     method: "POST",
                     headers: {

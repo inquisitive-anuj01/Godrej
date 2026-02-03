@@ -134,7 +134,7 @@ const Modal = ({ isOpen, onClose, type }) => {
 
         try {
             const response = await fetch(
-                "https://godrej-backend-gray.vercel.app/api/submit-form",
+                "https://godrej-backend-blue.vercel.app/api/submit-form",
                 {
                     method: "POST",
                     headers: {
