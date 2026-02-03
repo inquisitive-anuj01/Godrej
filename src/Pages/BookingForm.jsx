@@ -31,7 +31,7 @@ const BookingForm = ({ title = "Get in Touch" }) => {
         try {
             // TODO: Update with actual backend URL
             const response = await fetch(
-                "http://localhost:5000/api/submit-form",
+                "https://jk-backend-aj.vercel.app/api/submit-form",
                 {
                     method: "POST",
                     headers: {
