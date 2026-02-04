@@ -3,21 +3,22 @@ export const PROJECT_INFO = {
     tagline: "Luxurious 2, 3, 4 BHK Residences",
     location: "Sector Sigma-III, Greater Noida",
     type: "2, 3 & 4 BHK Luxury Apartments",
-    reraNumber: "UPRERAAGT23971",
+    reraNumber: "UPRERAPRJ110163/08/2025",
     developer: "Godrej Properties & Smartworld Developers",
     totalArea: "9 Acres",
     towers: 9,
-    clubhouse: "60,000+ sq.ft",
-    units: 900,
-    possession: "2028",
+    clubhouse: "45,000+ sq.ft",
+    units: 958,
+    possession: "29 Dec 2030",
     priceStart: "₹1.63 Cr*",
+    paymentPlan: "30:40:30",
     status: "New Launch"
 };
 
 export const UNIT_TYPES = [
     {
         type: "SPACIOUS 2 BHK + ST",
-        size: "1375 sq.ft.",
+        size: "1380 sq.ft.",
         price: "₹1.63 Cr*",
         chequeAmount: "₹5 Lacs",
         features: [
@@ -32,8 +33,8 @@ export const UNIT_TYPES = [
     },
     {
         type: "OPTIMAL 3 BHK",
-        size: "1850 sq.ft.",
-        price: "₹3 Cr*",
+        size: "1880 sq.ft.",
+        price: "₹2.20 Cr*",
         chequeAmount: "",
         features: [
             "3 Bedrooms with Attached Bathrooms",
@@ -47,8 +48,8 @@ export const UNIT_TYPES = [
     },
     {
         type: "LAVISH 3 BHK + STUDY",
-        size: "2100 sq.ft.",
-        price: "₹3.5 Cr*",
+        size: "2110 sq.ft.",
+        price: "₹2.52 Cr*",
         chequeAmount: "₹7.5 Lacs",
         features: [
             "3 Bedrooms with Attached Bathrooms",

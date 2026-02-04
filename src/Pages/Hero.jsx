@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiDownload, FiMapPin, FiChevronRight } from 'react-icons/fi';
+import { FiDownload, FiMapPin, FiChevronRight, FiClock } from 'react-icons/fi';
 import { MdKingBed, MdSquareFoot, MdApartment } from 'react-icons/md';
 import { GiModernCity } from 'react-icons/gi';
 import BookingForm from './BookingForm';
@@ -92,9 +92,18 @@ const Hero = ({ openModal }) => {
                         </h2>
 
                         {/* Price Badge */}
-                        <div className="inline-flex items-center bg-gradient-to-r from-[#4A7C59] to-[#3D6B4A] text-white px-6 py-3 rounded-lg mb-8 shadow-lg">
-                            <span className="text-sm mr-2">Price Starts From</span>
-                            <span className="text-2xl font-bold">{PROJECT_INFO.priceStart}</span>
+                        <div className="flex flex-wrap gap-3 mb-8">
+                             <div className="bg-gradient-to-r from-[#4A7C59] to-[#3D6B4A] text-white px-6 py-3 rounded-lg shadow-lg">
+                                <span className="text-sm block opacity-80 text-white">Starts From</span>
+                                <span className="text-2xl font-bold text-white">{PROJECT_INFO.priceStart}</span>
+                            </div>
+                            <div className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-lg flex items-center">
+                                <FiClock className="mr-2 text-[#8BB89A]" />
+                                <div>
+                                    <span className="text-xs block opacity-70">Payment Plan</span>
+                                    <span className="font-bold">{PROJECT_INFO.paymentPlan}</span>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Features Grid - Glassmorphism Cards */}
@@ -167,9 +176,12 @@ const Hero = ({ openModal }) => {
                     className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6"
                 >
                     {[
-                        { label: 'Status', value: PROJECT_INFO.status },
+                        // { label: 'Status', value: PROJECT_INFO.status },
                         { label: 'RERA No.', value: PROJECT_INFO.reraNumber },
                         { label: 'Possession', value: PROJECT_INFO.possession },
+                        // { label: 'Units Available', value: PROJECT_INFO.units },
+                        { label: 'EOI Starting From', value: '₹5 Lakhs' },
+                        // { label: 'Possession Date', value: PROJECT_INFO.possession },
                     ].map((item, index) => (
                         <div
                             key={index}

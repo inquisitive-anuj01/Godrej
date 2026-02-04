@@ -67,7 +67,7 @@ const Overview = ({ openModal }) => {
                         <div className="space-y-4 text-white/90 mb-8 text-lg leading-relaxed">
                             <p>
                                 {PROJECT_INFO.developer} in {PROJECT_INFO.location}, is a premium
-                                residential project with {PROJECT_INFO.towers} towers of G+30 floors offering
+                                residential project with {PROJECT_INFO.towers} towers of G+30 floors offering {" "}
                                 {PROJECT_INFO.type}. Possession is expected in {PROJECT_INFO.possession}.
                             </p>
                             <p>

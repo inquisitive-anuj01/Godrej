@@ -62,7 +62,7 @@ const PriceList = ({ openModal }) => {
                                 </div>
 
                                 <div className="mb-6">
-                                    <span className="text-2xl font-bold text-gray-900">₹ {plan.price}</span>
+                                    <span className="text-2xl font-bold text-gray-900">{plan.price}</span>
                                     <span className="text-gray-500 text-sm ml-1">Onwards</span>
                                 </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiTrendingUp, FiDollarSign, FiHome, FiNavigation } from 'react-icons/fi';
+import { FiTrendingUp, FiDollarSign, FiHome, FiNavigation, FiClock, FiCheckCircle } from 'react-icons/fi';
 import { HIGHLIGHTS } from '../data/constants';
 
 // Leaf SVG for decoration
@@ -15,7 +15,9 @@ const Highlights = () => {
         trending: <FiTrendingUp className="text-3xl" />,
         capital: <FiDollarSign className="text-3xl" />,
         rental: <FiHome className="text-3xl" />,
-        airport: <FiNavigation className="text-3xl" />
+        airport: <FiNavigation className="text-3xl" />,
+        payment: <FiClock className="text-3xl" />,
+        eoi: <FiCheckCircle className="text-3xl" />
     };
 
     return (
@@ -107,9 +109,10 @@ const Highlights = () => {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-white text-center">
                         {[
                             { value: "9", label: "Towers" },
-                            { value: "900+", label: "Apartments" },
-                            { value: "9", label: "Acres" },
-                            { value: "60K+", label: "Sq.ft Clubhouse" }
+                            { value: "958", label: "Apartments" },
+                            // { value: "9", label: "Acres" },
+                            { value: "45K+", label: "Sq.ft Clubhouse" },
+                            { value: "29 Dec 2030", label: "Possession Date" }
                         ].map((stat, index) => (
                             <motion.div
                                 key={index}
@@ -118,7 +121,7 @@ const Highlights = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 + 0.3 }}
                             >
-                                <div className="text-4xl md:text-5xl font-bold mb-2">{stat.value}</div>
+                                <div className="text-2xl md:text-4xl font-semibold mb-2">{stat.value}</div>
                                 <div className="text-white/70">{stat.label}</div>
                             </motion.div>
                         ))}

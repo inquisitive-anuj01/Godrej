@@ -12,22 +12,36 @@ const FloorPlan = ({ openModal }) => {
         {
             id: 1,
             type: "2 BHK",
-            size: "1375 sq.ft.",
-            price: "₹ 1.63 Cr*",
+            size: "1380 SQ.Ft.",
+            price: "1.63 Cr*",
             image: FloorPlan2BHK
         },
         {
             id: 2,
             type: "3 BHK",
-            size: "1850 - 2450 sq.ft.",
-            price: "₹ 3-4 Cr*",
+            size: "1880 SQ.Ft.",
+            price: "2.20 Cr*",
             image: FloorPlan3BHK
         },
         {
             id: 3,
+            type: "3 BHK + Study",
+            size: "2110 SQ.Ft.",
+            price: "2.52 Cr*",
+            image: FloorPlan3BHK
+        },
+        {
+            id: 4,
+            type: "3 BHK + Servant",
+            size: "2400 SQ.Ft.",
+            price: "2.85 Cr*",
+            image: FloorPlan3BHK
+        },
+        {
+            id: 5,
             type: "4 BHK",
-            size: "2700 sq.ft.",
-            price: "₹ 4.40 Cr*",
+            size: "2609 SQ.Ft.",
+            price: "3.10 Cr*",
             image: FloorPlan4BHK
         }
     ];

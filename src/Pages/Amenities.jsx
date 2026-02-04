@@ -113,7 +113,7 @@ const Amenities = () => {
                 >
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-white text-center">
                         {[
-                            { value: "60K+", label: "Sq.ft Clubhouse" },
+                            { value: "45K", label: "Sq.ft Clubhouse" },
                             { value: "2km", label: "Jogging Track" },
                             { value: "100%", label: "Power Backup" },
                             { value: "24/7", label: "Security" }

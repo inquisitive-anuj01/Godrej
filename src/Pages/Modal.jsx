@@ -236,7 +236,7 @@ const Modal = ({ isOpen, onClose, type }) => {
                                             <h3 className="text-2xl font-bold mb-2">Godrej Arden</h3>
                                             <p className="text-white/80">Greater Noida</p>
                                             <div className="mt-6 space-y-2 text-sm text-white/70">
-                                                <p>✓ 9 Towers | 900+ Apartments</p>
+                                                <p>✓ 9 Towers | 958 Apartments</p>
                                                 <p>✓ 2, 3 & 4 BHK Options</p>
                                                 <p>✓ Starting ₹1.63 Cr*</p>
                                             </div>

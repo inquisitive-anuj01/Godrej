@@ -88,8 +88,8 @@ const Footer = () => {
                             <li className="flex items-start space-x-3">
                                 <FiClock className="text-[#4A7C59] mt-1 flex-shrink-0" />
                                 <div className="text-gray-400">
-                                    <p>Mon - Sat: {CONTACT_INFO.workingHours.weekdays}</p>
-                                    <p>Sun: {CONTACT_INFO.workingHours.sunday}</p>
+                                    <p>Mon - Sun: {CONTACT_INFO.workingHours.weekdays}</p>
+                                    
                                 </div>
                             </li>
                         </ul>
