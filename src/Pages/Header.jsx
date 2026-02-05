@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiPhone, FiMenu, FiX } from "react-icons/fi";
+import Logo from "../assets/image1.png"
 
 const Header = ({ scrollToSection, openModal }) => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -35,13 +36,14 @@ const Header = ({ scrollToSection, openModal }) => {
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-3">
-                        <div className="w-10 h-10 bg-gradient-to-br from-[#4A7C59] to-[#3D6B4A] rounded-lg flex items-center justify-center">
+                        {/* <div className="w-10 h-10 bg-gradient-to-br from-[#4A7C59] to-[#3D6B4A] rounded-lg flex items-center justify-center">
                             <span className="text-white font-bold text-lg">G</span>
                         </div>
                         <div>
                             <h1 className="text-lg font-bold text-gray-900">Godrej Arden</h1>
                             <p className="text-xs text-gray-600">Greater Noida</p>
-                        </div>
+                        </div> */}
+                        <img src={Logo} alt="Godrej Arden Logo" className="w-38 h-15" />
                     </motion.div>
 
                     {/* Desktop Navigation */}

@@ -4,7 +4,7 @@ export const PROJECT_INFO = {
     location: "Sector Sigma-III, Greater Noida",
     type: "2, 3 & 4 BHK Luxury Apartments",
     reraNumber: "UPRERAPRJ110163/08/2025",
-    developer: "Godrej Properties & Smartworld Developers",
+    developer: "Authorised Partner ",
     totalArea: "9 Acres",
     towers: 9,
     clubhouse: "45,000+ sq.ft",
