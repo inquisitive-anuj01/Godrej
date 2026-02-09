@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiUser, FiMail, FiPhone, FiCheckCircle } from "react-icons/fi";
 
@@ -12,12 +12,19 @@ const BookingForm = ({ title = "Get in Touch" }) => {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [error, setError] = useState("");
 
+    useEffect(() => {
+        const handleBack = () => {
+            setIsSubmitted(false);
+        };
+        window.addEventListener("popstate", handleBack);
+        return () => window.removeEventListener("popstate", handleBack);
+    }, []);
+
     const downloadPDF = () => {
         const link = document.createElement("a");
         // Main brochure PDF - Google Drive direct download URL
         link.href = "https://drive.google.com/uc?export=download&id=1aqeJ-0ub8XWx1oaxMDUMuNeJrOD1RUhG";
         link.download = "Godrej-Arden-Brochure.pdf";
-        link.target = "_blank";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

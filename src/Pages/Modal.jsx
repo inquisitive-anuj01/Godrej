@@ -114,7 +114,6 @@ const Modal = ({ isOpen, onClose, type }) => {
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = fileName;
-        link.target = "_blank";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -152,12 +151,11 @@ const Modal = ({ isOpen, onClose, type }) => {
             const data = await response.json();
 
             if (response.ok) {
-                setIsSubmitted(true);
-
-                setTimeout(() => {
-                    downloadPDF();
-                }, 1000);
                 window.history.pushState({}, "", "/thankyou");
+
+                downloadPDF();
+
+                setIsSubmitted(true);
 
                 setTimeout(() => {
                     setFormData({
@@ -167,6 +165,8 @@ const Modal = ({ isOpen, onClose, type }) => {
                         city: "",
                         details: "",
                     });
+                    setIsSubmitted(false);
+                    window.history.pushState({}, "", "/");
                     onClose();
                 }, 3000);
             } else {
